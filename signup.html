@@ -1,0 +1,86 @@
+<!DOCTYPE html> 
+<html> 
+    <head>
+        <title>ĐĂNG KÝ-TRƯỜNG ĐẠI HỌC HÀ NỘI</title>
+        <link rel="icon" href="https://cdn.inevn.com/img/thumb/37489.50x.isij" type="image/x-icon" />
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="css/signup.css">
+    </head>
+    <body>
+        <div class="pi">
+            <div class="pii">
+                <form name="dk" method="post" action=""  onsubmit="return kiemtra()" id="myform" style="margin:30px;width:1100px;height:600px;">
+                    <div class="tieude">
+                        <img style="float:left;margin-right: 15px;height: 50px;width: 50px;" src="img/logo.png" >   
+                        <p style="font-weight: bold; color: #8c0025;font-size: 30px;margin-left: 10px;" > ĐĂNG KÝ</p> 
+                    </div>
+                    
+                    <table style="margin: 20px 150px;height: 60%;">
+                        <tr>
+                            <td id="label">Họ Và Tên:</td>
+                            <td><input placeholder="Nhập họ và tên" type= "text"  name= "firstname" > </td>
+                        </tr>
+                        <tr>
+                            <td id="label">Ngày Sinh:</td>
+                            <td> <input placeholder="Nhập ngày sinh"  type= "text"  name= "dateofbirth" > </td>
+                        </tr>
+                        <tr>
+                            <td id="label">Mã Sinh Viên:</td>
+                            <td><input placeholder="Nhập mã sinh viên" type= "text"  name= "mobilenumber" >  </td>
+                        </tr>
+                        <tr>
+                            <td id="label">Email:</td>
+                            <td> <input placeholder="Nhập email" type= "text"  name= "emailid" >  </td>
+                        </tr>
+                        <tr>
+                            <td id="label">Số Điện Thoại:</td>
+                            <td><input placeholder="Nhập số điện thoại" type= "text"  name= "mobilenumber" >  </td>
+                        </tr>
+                    
+                
+                    </table>
+                    <button type="button"  onclick="kiemtra()"><b>ĐĂNG KÝ</b></button>
+                    <h4 style="color: red" id="baoloi"></h4>
+                </form> 
+
+    
+            </div>
+
+        </div>
+        
+            
+        
+    </body>
+   
+    <script>
+        function kiemtra(){
+            var firstname = document.dk.firstname.value;
+            var lastname = document.dk.lastname.value;
+            var dateofbirth =document.dk.dateofbirth.value;
+            var emailid = document.dk.emailid.value;
+            var mobilenumber = document.dk.mobilenumber.value;
+            if (firstname=="") { //quy tắc 1
+                document.getElementById("baoloi").innerHTML="Chưa nhập firstname";
+                return false;
+            }
+            if (lastname=="") {  //quy tắc 2
+                document.getElementById("baoloi").innerHTML="Chưa nhập lastname";
+                return false;
+            }
+            if (dateofbirth=="") {  //quy tắc 2
+                document.getElementById("baoloi").innerHTML="Chưa nhập ngày sinh";
+                return false;
+            }
+            if (emailid=="") {  //quy tắc 2
+                document.getElementById("baoloi").innerHTML="Chưa nhập email";
+                return false;
+            }
+            if (mobilenumber=="") {  //quy tắc 2
+                document.getElementById("baoloi").innerHTML="Chưa nhập số điện thoại";
+                return false;
+            }
+            return true;
+        }
+    </script>
+    
+</html>
