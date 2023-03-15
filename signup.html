@@ -39,7 +39,7 @@
                     
                 
                     </table>
-                    <button type="button"  onclick="kiemtra()"><a style="text-decoration: none;color: #fff;" href="#">ĐĂNG KÝ</a></button>
+                    <button type="button"  onclick="kiemtra()">ĐĂNG KÝ</button>
                     <h4 style="color: red" id="baoloi"></h4>
                 </form> 
 
@@ -60,8 +60,7 @@
             var emailid = document.dk.emailid.value;
             var mobilenumber = document.dk.mobilenumber.value;
             if (firstname=="") { //quy tắc 1
-                document.getElementById("baoloi").innerHTML="Chưa nhập firstname";
-                return false;
+                alert('Bạn chưa nhập tên')
             }
             if (lastname=="") {  //quy tắc 2
                 document.getElementById("baoloi").innerHTML="Chưa nhập lastname";

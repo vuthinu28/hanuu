@@ -1,7 +1,6 @@
 <!DOCTYPE html> 
 <html> 
     <head>
-        <title> Ảnh 2</title>
         <meta charset="UTF-8" />
         <title>ĐĂNG NHẬP - TRƯỜNG ĐẠI HỌC HÀ NỘI</title>
         <link rel="icon" href="https://cdn.inevn.com/img/thumb/37489.50x.isij" type="image/x-icon" />
@@ -9,7 +8,7 @@
     </head>
     <body>
         <div class="t">
-            <form style=" border-radius: 10px;height:338px;width:565px;margin:20px;background-color: rgba(255,255,255,.75);"> 
+            <form name="dk" onsubmit="return kiemtra()" style=" border-radius: 10px;height:338px;width:565px;margin:20px;background-color: rgba(255,255,255,.75);"> 
                 <div class="lb">
                     <div class="lbb">
                         <img style="float:left;height: 50px;width: 50px; margin-top: 10px;" src="img/logo.png" >   
@@ -20,13 +19,14 @@
                 <label>Mã Sinh Viên:</label> 
                 <input placeholder="Nhập mã sinh viên" type= "text"  name= "firstname" > 
                 <br>  
+                <h4 style="color: red" id="baoloi"></h4>
                 <br> 
                 <label>Mật Khẩu:</label>
                 <input placeholder="Nhập mật khẩu" style="margin-left: 50px;" type= "text"  name= "emailid" > 
                 <br>
                 <br> 
             
-                <button type="button" onclick=""><b style="font-size: 15px;color: #fff;">Đăng Nhập</b></button>
+                <button type="button" onclick="kiemtra()" ><a style="font-size: 15px;color: #fff;">Đăng Nhập</a></button>
     
                
                 
@@ -35,4 +35,35 @@
         
         
     </body>
+    <script>
+        function kiemtra(){
+            var firstname = document.dk.firstname.value;
+            var lastname = document.dk.lastname.value;
+            var dateofbirth =document.dk.dateofbirth.value;
+            var emailid = document.dk.emailid.value;
+            var mobilenumber = document.dk.mobilenumber.value;
+            if (firstname=="") { //quy tắc 1
+                document.getElementById("baoloi").innerHTML="Chưa nhập firstname";
+                return false;
+            }
+            if (lastname=="") {  //quy tắc 2
+                document.getElementById("baoloi").innerHTML="Chưa nhập lastname";
+                return false;
+            }
+            if (dateofbirth=="") {  //quy tắc 2
+                document.getElementById("baoloi").innerHTML="Chưa nhập ngày sinh";
+                return false;
+            }
+            if (emailid=="") {  //quy tắc 2
+                document.getElementById("baoloi").innerHTML="Chưa nhập email";
+                return false;
+            }
+            if (mobilenumber=="") {  //quy tắc 2
+                document.getElementById("baoloi").innerHTML="Chưa nhập số điện thoại";
+                return false;
+            }
+            return true;
+        }
+    </script>
+    
 </html>
