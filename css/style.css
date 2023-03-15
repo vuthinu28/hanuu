@@ -338,6 +338,7 @@ input {
 }
 .fwb{
     font-weight: bold;
+
 }
 .mt5{
     margin-top: 5px;
@@ -429,7 +430,7 @@ input {
     width: 100%;
 }
 .fs11{
-    padding: 10px;
+    padding-top: 10px;
 }
 .fas{
     margin-right: 10px
@@ -457,4 +458,67 @@ input {
     box-shadow: 1px 1px 20px 0px #ddd;
     margin-left: 15px;
     padding: 15px;
+}
+
+
+.pb249 {
+    padding-bottom: 37.5%;
+}
+.nut{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.nut a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.bg1{
+    background-color: #8c0025;
+}
+.cf{
+    color: #fff;
+}
+.bra20 {
+    border-radius: 30px;
+
+}
+.plr10{
+    padding:5px 10px;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.pt{
+   
+}
+.pb23 {
+    padding-bottom: 150%;
+}
+.bgsc {
+    background-size: cover;
+}
+.ttu {
+    text-transform: uppercase;
+}
+.tac{
+    text-align: center;
+}
+.fwb i{
+    color: rgb(90,0,0);
+    line-height: 1;
+    
+}
+.xemthem{
+    font-weight: bold;
+    color: #8c0025;
+}
+.pt10{
+    padding-top: 10px;
+}
+.pb1 {
+    padding-bottom: 100%;
 }
