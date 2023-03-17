@@ -5,6 +5,7 @@
         <title>ĐĂNG NHẬP - TRƯỜNG ĐẠI HỌC HÀ NỘI</title>
         <link rel="icon" href="https://cdn.inevn.com/img/thumb/37489.50x.isij" type="image/x-icon" />
         <link rel="stylesheet" href="css/login.css">
+        
     </head>
     <body>
         <div class="t">
@@ -17,12 +18,12 @@
                     
                 </div>
                 <label>Mã Sinh Viên:</label> 
-                <input placeholder="Nhập mã sinh viên" type= "text"  name= "firstname" > 
+                <input placeholder="Nhập mã sinh viên" type= "text"  name= "msv" > 
                 <br>  
                 <h4 style="color: red" id="baoloi"></h4>
                 <br> 
                 <label>Mật Khẩu:</label>
-                <input placeholder="Nhập mật khẩu" style="margin-left: 50px;" type= "text"  name= "emailid" > 
+                <input placeholder="Nhập mật khẩu" style="margin-left: 50px;" type= "text"  name= "mk" > 
                 <br>
                 <br> 
             
@@ -35,35 +36,5 @@
         
         
     </body>
-    <script>
-        function kiemtra(){
-            var firstname = document.dk.firstname.value;
-            var lastname = document.dk.lastname.value;
-            var dateofbirth =document.dk.dateofbirth.value;
-            var emailid = document.dk.emailid.value;
-            var mobilenumber = document.dk.mobilenumber.value;
-            if (firstname=="") { //quy tắc 1
-                document.getElementById("baoloi").innerHTML="Chưa nhập firstname";
-                return false;
-            }
-            if (lastname=="") {  //quy tắc 2
-                document.getElementById("baoloi").innerHTML="Chưa nhập lastname";
-                return false;
-            }
-            if (dateofbirth=="") {  //quy tắc 2
-                document.getElementById("baoloi").innerHTML="Chưa nhập ngày sinh";
-                return false;
-            }
-            if (emailid=="") {  //quy tắc 2
-                document.getElementById("baoloi").innerHTML="Chưa nhập email";
-                return false;
-            }
-            if (mobilenumber=="") {  //quy tắc 2
-                document.getElementById("baoloi").innerHTML="Chưa nhập số điện thoại";
-                return false;
-            }
-            return true;
-        }
-    </script>
-    
+    <script src="js/login.js"></script>
 </html>
